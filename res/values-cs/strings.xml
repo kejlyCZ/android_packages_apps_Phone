@@ -611,6 +611,8 @@
     <string name="contactPhoto" msgid="4713193418046639466">"fotografie kontaktu"</string>
     <string name="goPrivate" msgid="865837794424530980">"přepnout na soukromé"</string>
     <string name="selectContact" msgid="781975788478987237">"vybrat kontakt"</string>
+    <string name="voicemail_notification_title">Oznámení hlasových zpráv</string>
+    <string name="voicemail_notification_summary">Povolí oznamování (nových) hlasových zpráv</string>
     <string name="sip_settings" msgid="6699045718560859691">"Nastavení internetových hovorů"</string>
     <string name="sip_accounts" msgid="2097054001288457163">"Účty pro internetové hovory (SIP)"</string>
     <string name="sip_accounts_title" msgid="1212889069281054570">"Účty"</string>
@@ -692,7 +694,7 @@
     <string name="no_internet_available" msgid="1100564991026313234">"Chcete-li uskutečnit internetový hovor, zkontrolujte, zda jste připojeni k internetu"</string>
     <string name="no_wifi_available" msgid="3389743006886634541">"Abyste mohli uskutečnit internetový hovor musíte být připojeni k síti WiFi (viz část Nastavení bezdrátového připojení a sítě)."</string>
     <string name="no_voip" msgid="8901474054537199865">"Internetové hovory nejsou podporovány"</string>
-<string name="notification_ongoing_calling_format">Calling (<xliff:g id="duration">%s</xliff:g>)</string>
+<string name="notification_ongoing_calling_format">Hovor (<xliff:g id="duration">%s</xliff:g>)</string>
 <string name="vibrate_outgoing">Vibrace při odpovědi</string>
 <string name="vibrate_outgoing_sum">Vibrace při odpovědi na vaše volání</string>
 <string name="vibrate_45">Vibrace každých 45 sekund</string>
@@ -701,6 +703,8 @@
 <string name="vibrate_hangup_sum">Vibrace po ukončení hovoru</string>
 <string name="screen_awake">Zapnutá obrazovka</string>
 <string name="screen_awake_sum">Obrazovka zůstane při hovoru déle zapnutá</string>
+<string name="always_proximity">Vždy použít senz.přiblížení</string>
+<string name="always_proximity_sum">Povolit vypnutí obrazovky senzorem přiblížení i když je telefon v horizontální poloze.</string>
 <string name="led_notify_call">LED při zmeškaném hovoru</string>
 <string name="led_notify_call_sum">LED bude blikat pokud budete mít zmeškaný hovor</string>
 <string name="led_show_organ">Zobrazit organizace</string>
@@ -713,7 +717,44 @@
 <string name="black_list">Blokovaný seznam</string>
 <string name="black_list_sum">Příchozí hovory ze seznamu budou odmítnuty</string>
 <string name="add_black">Přidat telefonní číslo</string>
-<string name="remove_black">Odstranit %s z seznamu</string>
+<string name="black_regex_title">Použít zástupné znaky</string>
+<string name="black_regex_summary">Použije . jako zástupný znak a * pro opakování. Např. 123.* blokuje čísla začínající 123 a .*123.* blokuje čísla obsahující 123</string>
+<string name="remove_black">Odebrat %s ze seznamu</string>
+<string name="turn_silence">Otočit pro ztišení</string>
+<string name="turn_silence_sum">Otočit telefon pro ztišení zvonění</string>
+<string name="left_hand">Mód pro leváky</string>
+<string name="left_hand_sum">Použít mód pro držení v levé ruce, vyžaduje restart telefonu pro aktivaci.</string>
 <string name="set_force_touch">Vynutit Touch Keyboard</string>
 <string name="set_force_touch_sum">Vynutit zobrazení Touch UI bez detekce proximity sensoru.</string>
+<string name="rotate_incall">Povolit rotaci senzorem</string>
+<string name="rotate_incall_sum">Povolí rotaci obrazovky příchozího hovoru podle senzorů orientace.</string>
+<string name="bg_incall">Příchozí hovor v pozadí</string>
+<string name="bg_incall_sum">Drží obrazovku příchozího hovoru v pozadí, když je obrazovka zapnuta, zobrazí pouze oznámení a přehraje vyzváněcí tón.</string>
+    <string name="per_change_mobile_network">Změna sítě (2G/3G)</string>
+    <string name="per_change_mobile_network_desc">Aplikace s tímto oprávněním může kdykoliv přepínat mezi 2G a 3G daty. 3G je rychlejší, spotřebovává více energie a může také stát více peněz.</string>
+    <string name="phone_number_label">Mé telefonní číslo</string>
+    <string name="phone_number_summary">Nastavte telefonní číslo pro tento přístroj</string>
+    <string name="trackball_answer">Odpověď trackballem</string>  
+    <string name="trackball_answer_sum">Stiskněte trackball pro zvednutí příchozího hovoru.</string>
+    <string-array name="trackballLabels">
+       <item>Zakázáno</item> 
+       <item>Klepnout pro odpověď</item>
+       <item>Dvakrát klepnout pro odpověď</item>    
+    </string-array>  
+    <string name="trackball_hangup">Zavěšení trackballem</string>  
+    <string name="trackball_hangup_sum">Stiskněte trackball pro zavěšení probíhajícího hovoru.</string>
+    <string-array name="trackballHangupLabels">
+       <item>Zakázáno</item> 
+       <item>Klepnout pro ukončení</item>
+       <item>Dvakrát klepnout pro ukončení</item>  
+    </string-array> 
+    <string name="hide_hold_button">Skrýt tlač. Přidržet</string>  
+    <string name="hide_hold_button_sum">Skryje tlačítko přidržení probíhajícího hovoru.</string>
+    <string name="toast_phone_goggles">Nemáte oprávnění telefonovat v tuto dobu. Zkuste to prosím později.</string>
+    <string name="dialog_phone_goggles_title">Hovor blokován</string>
+    <string name="dialog_phone_goggles_title_unlocked">Hovor autorizován</string>
+    <string name="dialog_phone_goggles_content">Telefonovat v tuto dobu nemusí být moudré. Opravdu chcete pokračovat?</string>
+    <string name="dialog_phone_goggles_unauthorized">Telefonovat v tuto dobu nemusí být moudré.</string>
+    <string name="dialog_phone_goggles_ok">Volat</string>
+    <string name="dialog_phone_goggles_cancel">Zrušit</string>
 </resources>
